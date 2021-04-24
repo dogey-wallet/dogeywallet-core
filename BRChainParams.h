@@ -47,11 +47,10 @@ typedef struct {
 } BRChainParams;
 
 static const char *BRMainNetDNSSeeds[] = {
-    "dogecoin.com.", "seed.dogecoin.com.", "multidoge.org.",
-    "seed.multidoge.org.", "seed2.multidoge.org.", NULL};
+    "multidoge.org.", "seed.multidoge.org.", "seed2.multidoge.org.", NULL};
 
 static const char *BRTestNetDNSSeeds[] = {
-    "testnet-seed.ltc.xurious.com.", "seed-b.litecoin.loshan.co.uk.", "dnsseed-testnet.thrasher.io.", NULL
+    "jrn.me.uk.", "testseed.jrn.me.uk.", NULL
 };
 
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they must be at
@@ -114,11 +113,6 @@ static int BRTestNetVerifyDifficulty(const BRMerkleBlock *block, const BRSet *bl
 {
     return 1; // XXX skip testnet difficulty check for now
 }
-
-pchMessageStart[0] = 0xc0;
-        pchMessageStart[1] = 0xc0;
-        pchMessageStart[2] = 0xc0;
-        pchMessageStart[3] = 0xc0;
 
 static const BRChainParams BRMainNetParams = {
     BRMainNetDNSSeeds,
