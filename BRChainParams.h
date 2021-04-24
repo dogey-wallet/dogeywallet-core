@@ -57,6 +57,7 @@ static const char *BRTestNetDNSSeeds[] = {
 // difficulty transition boundaries in order to verify the block difficulty at the immediately following transition
 static const BRCheckPoint BRMainNetCheckpoints[] = {
     {       0, uint256("1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691"), 1386325540, 0x1e0ffff0 },
+    {  104679, uint256("35eb87ae90d44b98898fec8c39577b76cb1eb08e1261cfc10706c8ce9a1d01cf"), 1392637497, 0x1b41676b },
 
 
     // {   20160, uint256("1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691"), 1319798300, 0x1d055262 },
