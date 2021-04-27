@@ -38,7 +38,7 @@ extern "C" {
 // BIP32 is a scheme for deriving chains of addresses from a seed value
 // https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
 
-#define BIP32_HARD                  0x80000000
+#define BIP32_HARD                  0x9e000000
 
 #define SEQUENCE_GAP_LIMIT_EXTERNAL 10
 #define SEQUENCE_GAP_LIMIT_INTERNAL 5
