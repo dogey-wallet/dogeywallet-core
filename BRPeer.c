@@ -287,8 +287,8 @@ static int _BRPeerAcceptAddrMessage(BRPeer *peer, const uint8_t *msg, size_t msg
             if (! (p.services & SERVICES_NODE_NETWORK)) continue; // skip peers that don't carry full blocks
             if (! _BRPeerIsIPv4(&p)) continue; // ignore IPv6 for now
         
-            // if address time is more than 10 min in the future or unknown, set to 5 days old
-            if (p.timestamp > now + 10*60 || p.timestamp == 0) p.timestamp = now - 5*24*60*60;
+            // if address time is more than 1 min in the future or unknown, set to 5 days old
+            if (p.timestamp > now + 1*60 || p.timestamp == 0) p.timestamp = now - 5*24*60*60;
             p.timestamp -= 2*60*60; // subtract two hours
             peers[peersCount++] = p; // add it to the list
         }
